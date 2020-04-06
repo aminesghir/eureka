@@ -1,4 +1,4 @@
-variable: 
+variables: 
  DOCKER_DRIVER: overlay
  USER_GITLAB: aminesghir
  APP_NAME: demo 
