@@ -1,6 +1,6 @@
-Image: DOCKER .lastest
+
 service: 
--docker:dind
+- docker:dind
 
 variable: 
  DOCKER_DRIVER: overlay
