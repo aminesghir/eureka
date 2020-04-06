@@ -1,0 +1,30 @@
+Image: DOCKER .lastest
+service: 
+-docker:dind
+
+variable: 
+ DOCKER_DRIVER: overlay
+ USER_GITLAB: aminesghir
+ APP_NAME: eureka 
+ REPO: eureka
+
+stages: 
+ - build 
+ - docker
+
+maven-build:
+ image: maven:3-jdk-8
+ stage: build
+ script : "mnv package -B"
+ actifact: 
+    path: 
+    - target/*.jar
+
+docker-build: 
+ stage: docker
+ script: 
+ - docker build 
+ - clean cache 
+
+
+
