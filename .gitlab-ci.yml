@@ -1,5 +1,4 @@
-
-service: 
+service:
 - docker
 
 variable: 
@@ -15,7 +14,7 @@ stages:
 maven-build:
  image: maven:3-jdk-8
  stage: build
- script : "mnv package -B"
+ script : "mvn package"
  actifact: 
     path: 
     - target/*.jar
