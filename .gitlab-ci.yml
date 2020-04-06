@@ -1,6 +1,3 @@
-service:
-- docker
-
 variable: 
  DOCKER_DRIVER: overlay
  USER_GITLAB: aminesghir
