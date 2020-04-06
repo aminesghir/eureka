@@ -1,11 +1,11 @@
 
 service: 
-- docker:dind
+- docker
 
 variable: 
  DOCKER_DRIVER: overlay
  USER_GITLAB: aminesghir
- APP_NAME: eureka 
+ APP_NAME: demo 
  REPO: eureka
 
 stages: 
